@@ -1,0 +1,131 @@
+:root {
+    --first : #091540;
+    --second : #1B2CC1;
+    --third : #7692FF;
+}
+
+*, 
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color:  var(--first);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login.hidden {
+    display: none;
+}
+
+.imgLogo {
+    width: 110px;
+    height: 100px;
+    margin: 20px 0 40px;
+    border-radius: 8px;
+}
+
+.login {
+    position: relative;
+    background-color: var(--second);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    /* max-width: 376px; */
+    /* max-height: 495px; */
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+label {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+input {
+    width: 330px;
+    height: 52px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    border: none;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 15px;
+    top: 67%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+}
+
+.lupaPW {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    bottom: 26%;
+    right: 2%;
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.btn-signIn {
+    background-color: var(--third);
+    border: none;
+    border-radius: 14px;
+    width: 152px;
+    height: 47px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 11px;
+    gap: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.img-google {
+    border-right: 2px solid white;
+    width: 32px;
+    height: 30px;
+    padding: 4px;
+}
+
+@media (max-width: 600px) {
+    .login {
+        margin:60%;
+        max-height: 100vh;
+    }
+}

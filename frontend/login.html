@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -12,7 +12,8 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="login hidden">
+    <!-- Tampilan login -->
+    <section class="login hidden">
         <img class="imgLogo" src="assets/logg.jpeg" alt="logo">
         <form action="" class="formLogin">
             <label for="email">Email</label>
@@ -31,8 +32,31 @@
                 <span>Sign Up?</span>
             </button>
         </div>
-    </div>
+    </section>
+<!-- Tampilan login end -->
 
+<!-- Tampilan registrasi -->
+
+    <section class="registrasi">
+        <p>Create Your Account</p>
+        <form action="" class="formRegis">
+            <div>
+                <input type="text" name="username" id="username" placeholder="Username">
+            </div>
+             <div>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+             <div>
+                <input type="password" name="password" id="password" placeholder="Masukkan password anda">
+                <i id="togglePassword" class="bi bi-eye"></i>
+            </div>
+             <div>
+                <input type="password" name="password" id="password" placeholder="Masukkan password anda">
+                <i id="togglePassword" class="bi bi-eye"></i>
+            </div>
+        </form>
+        <button class="btn-signIn">Sign in</button>
+    </section>
 
 
 

@@ -21,6 +21,7 @@ body {
     align-items: center;
 }
 
+/* Tampilan login */
 .login.hidden {
     display: none;
 }
@@ -128,4 +129,21 @@ input:focus {
         margin:60%;
         max-height: 100vh;
     }
+}
+/* Tampilan login end */
+
+.registrasi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.formRegis {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 30px;
 }

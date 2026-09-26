@@ -140,6 +140,12 @@ input:focus {
     gap: 30px;
 }
 
+.title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .formRegis {
     display: flex;
     justify-content: center;

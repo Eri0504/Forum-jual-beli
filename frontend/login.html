@@ -43,20 +43,22 @@
         <form action="" class="formRegis">
             <div>
                 <input type="text" name="username" id="username" placeholder="Username">
+                <i class="bi bi-person"></i>
             </div>
              <div>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="regemail" placeholder="Email">
+                <i class="bi bi-envelope"></i>
             </div>
              <div>
                 <input type="password" name="password" id="passwordR1" placeholder="Masukkan password anda">
                 <i id="togglePasswordR1" class="bi bi-eye"></i>
             </div>
              <div>
-                <input type="password" name="password" id="passwordR2" placeholder="Masukkan password anda">
+                <input type="password" name="password" id="passwordR2" placeholder="Konfirmasi password anda">
                 <i id="togglePasswordR2" class="bi bi-eye"></i>
             </div>
         </form>
-        <button class="btn-signIn">Sign in</button>
+        <button class="btn-signIn">Summit</button>
     </section>
     <!-- Tampilan regis end -->
 
@@ -64,8 +66,8 @@
      <section class="forgot hidden">
         <p class="title">Forgot Your Password?</p>
         <p class="subtitle">Please input your email and continue</p>
-        <div>
-            <input type="text" name="email" id="email" placeholder="Email">
+        <div class="forgottxt">
+            <input type="text" name="email" id="frgemail" placeholder="Email">
             <i id="amplop" class="bi bi-envelope"></i>
         </div>
         <button class="btnvery">Verify Email</button>

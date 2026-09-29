@@ -178,7 +178,27 @@ input:focus {
     cursor: pointer;
     border: none;
 }
+.bi-person {
+    position: absolute;
+    left: 3%;
+    top: 8.9%;
+    transform: translateY(-50%);
+}
 
+#username {
+    padding-left: 10%;
+}
+
+.bi-envelope {
+    position: absolute;
+    left: 3%;
+    top: 35.8%;
+    transform: translateY(-50%);
+}
+
+#regemail {
+    padding-left: 10%;
+}
 /* Tampilan registrasi end */
 
 
@@ -200,11 +220,23 @@ input:focus {
     cursor: pointer;
 }
 
+#frgemail {
+    padding-left: 30px;
+}
+
 #amplop {
     position: absolute;
-    left: 20px;
+    left: 37.5%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.forgottxt{
+    padding-top: 10px;
+}
+
+.subtitle {
+    color: grey;
 }
 
 /* Forgot password end */

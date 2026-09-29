@@ -132,6 +132,12 @@ input:focus {
 }
 /* Tampilan login end */
 
+/* Tampilan registrasi */
+
+/* .registrasi.hidden {
+    display: none;
+} */
+
 .registrasi {
     display: flex;
     flex-direction: column;
@@ -147,11 +153,39 @@ input:focus {
 }
 
 .formRegis {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
     gap: 30px;
+}
+
+#togglePasswordR1 {
+    position: absolute;
+    right: 12px;
+    top: 64%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+}
+
+#togglePasswordR2 {
+    position: absolute;
+    right: 12px;
+    bottom: 2%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+}
+
+/* Tampilan registrasi end */
+
+
+/* Forgot password */
+
+.forgot.hidden {
+    display: none;
 }
 
 .btnvery {
@@ -172,3 +206,5 @@ input:focus {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* Forgot password end */

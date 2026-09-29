@@ -134,9 +134,9 @@ input:focus {
 
 /* Tampilan registrasi */
 
-/* .registrasi.hidden {
+.registrasi.hidden {
     display: none;
-} */
+}
 
 .registrasi {
     display: flex;
@@ -178,7 +178,8 @@ input:focus {
     cursor: pointer;
     border: none;
 }
-.bi-person {
+
+.bi-person-fill {
     position: absolute;
     left: 3%;
     top: 8.9%;
@@ -189,7 +190,7 @@ input:focus {
     padding-left: 10%;
 }
 
-.bi-envelope {
+.bi-envelope-fill {
     position: absolute;
     left: 3%;
     top: 35.8%;
@@ -204,9 +205,9 @@ input:focus {
 
 /* Forgot password */
 
-.forgot.hidden {
+/* .forgot.hidden {
     display: none;
-}
+} */
 
 .btnvery {
     background-color: var(--third);
@@ -224,19 +225,28 @@ input:focus {
     padding-left: 30px;
 }
 
-#amplop {
+.amplop {
     position: absolute;
-    left: 37.5%;
-    top: 50%;
+    left: 38%;
+    top: 53.5%;
     transform: translateY(-50%);
+    font-size: 17px;
 }
 
 .forgottxt{
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-top: 40px;
 }
 
 .subtitle {
     color: grey;
+}
+
+.email-frg {
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /* Forgot password end */

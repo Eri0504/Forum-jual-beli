@@ -153,3 +153,22 @@ input:focus {
     position: relative;
     gap: 30px;
 }
+
+.btnvery {
+    background-color: var(--third);
+    border: none;
+    border-radius: 14px;
+    margin-top: 20px;
+    width: 330px;
+    height: 47px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#amplop {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

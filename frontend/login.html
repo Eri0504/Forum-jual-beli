@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
     <title>Login</title>
 </head>
 <body>
@@ -58,7 +58,7 @@
                 <i id="togglePasswordR2" class="bi bi-eye"></i>
             </div>
         </form>
-        <button class="btn-signIn">Summit</button>
+        <button class="btn-signIn">SUBMIT</button>
     </section>
     <!-- Tampilan regis end -->
 
@@ -73,14 +73,18 @@
         </div>
         <button class="btnvery">Verify Email</button>
      </section>
-
+     <!-- Forgot Password End -->
 
 
 
 
     <script>
     const password = document.getElementById("password");
+    const passwordR1 = document.getElementById("passwordR1");
+    const passwordR2 = document.getElementById("passwordR2");
     const togglePassword = document.getElementById("togglePassword");
+    const togglePasswordR1 = document.getElementById("togglePasswordR1");
+    const togglePasswordR2 = document.getElementById("togglePasswordR2");
     
     togglePassword.addEventListener("click", function () {
     if (password.type === "password") {
@@ -91,6 +95,30 @@
         password.type = "password";
         togglePassword.classList.remove("bi-eye-slash");
         togglePassword.classList.add("bi-eye");
+    }
+    });
+
+    togglePasswordR1.addEventListener("click", function () {
+    if (passwordR1.type === "password") {
+        passwordR1.type = "text";
+        togglePasswordR1.classList.remove("bi-eye");
+        togglePasswordR1.classList.add("bi-eye-slash");
+    } else {
+        passwordR1.type = "password";
+        togglePasswordR1.classList.remove("bi-eye-slash");
+        togglePasswordR1.classList.add("bi-eye");
+    }
+    });
+
+    togglePasswordR2.addEventListener("click", function () {
+    if (passwordR2.type === "password") {
+        passwordR2.type = "text";
+        togglePasswordR2.classList.remove("bi-eye");
+        togglePasswordR2.classList.add("bi-eye-slash");
+    } else {
+        passwordR2.type = "password";
+        togglePasswordR2.classList.remove("bi-eye-slash");
+        togglePasswordR2.classList.add("bi-eye");
     }
     });
     </script>

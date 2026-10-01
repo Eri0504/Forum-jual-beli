@@ -54,6 +54,10 @@ body {
     gap: 10px;
 }
 
+.formLogin input::-ms-reveal {
+    display: none;
+}
+
 label {
     font-size: 15px;
     color: white;
@@ -72,6 +76,8 @@ input {
 
 input:focus {
     border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 #togglePassword {
@@ -134,9 +140,9 @@ input:focus {
 
 /* Tampilan registrasi */
 
-.registrasi.hidden {
+/* .registrasi.hidden {
     display: none;
-}
+} */
 
 .registrasi {
     display: flex;
@@ -159,6 +165,10 @@ input:focus {
     flex-direction: column;
     position: relative;
     gap: 30px;
+}
+
+.formRegis input::-ms-reveal {
+    display: none;
 }
 
 #togglePasswordR1 {
@@ -193,7 +203,7 @@ input:focus {
 .bi-envelope-fill {
     position: absolute;
     left: 3%;
-    top: 35.8%;
+    top: 36.4%;
     transform: translateY(-50%);
 }
 
@@ -205,9 +215,9 @@ input:focus {
 
 /* Forgot password */
 
-/* .forgot.hidden {
+.forgot.hidden {
     display: none;
-} */
+}
 
 .btnvery {
     background-color: var(--third);
@@ -227,13 +237,14 @@ input:focus {
 
 .amplop {
     position: absolute;
-    left: 38%;
-    top: 53.5%;
+    left: 3%;
+    top: 78.5%;
     transform: translateY(-50%);
     font-size: 17px;
 }
 
 .forgottxt{
+    position: relative;
     display: flex;
     flex-direction: column;
     /* align-items: center; */

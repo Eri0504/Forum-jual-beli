@@ -210,6 +210,24 @@ input:focus {
 #regemail {
     padding-left: 10%;
 }
+
+#passwordR1,
+#passwordR2 {
+    padding-left: 10%;
+}
+
+.lock {
+    position: absolute;
+    left: 3%;
+}
+
+.lock1 {
+    bottom: 33%;
+}
+
+.lock2 {
+    bottom: 5%;
+}
 /* Tampilan registrasi end */
 
 

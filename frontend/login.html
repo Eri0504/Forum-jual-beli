@@ -78,11 +78,24 @@
      <!-- Forgot Password End -->
 
      <!-- Kode OTP -->
-
+     <section class="kodeOtp">
+        <p class="title">Enter Your Code</p>
+        <p class="subtitle2">We send code to your email</p>
+        <div class="otp-input">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <div class="time-container">
+              <p>Resend your code <P id="otp-time">59s</P></p>
+            </div>
+        </div>
+        <button>Verify</button>
+     </section>
      <!-- Kode OTP end -->
 
      <!-- Check Email -->
-       <section class="checkemail">
+       <section class="checkemail hidden">
         <p class="title">Please Check Your email</p>
         <p class="subtitle2">We Send Your Password In Gmail</p>
          <button class="btnvery">Continue</button>
@@ -132,6 +145,25 @@
         togglePasswordR2.classList.add("bi-eye");
     }
     });
+
+    // OTP
+    const inputs = document.querySelectorAll(".otp-input input");
+    inputs.forEach((input, index) => {
+
+        input.addEventListener("input", () => {
+            if (input.value.length === 1 && index < inputs.length - 1) {
+                inputs[index + 1].focus();
+            }
+        });
+
+        input.addEventListener("keydown", (e) => {
+            if (e.key === "Backspace" && input.value === "" && index > 0) {
+                inputs[index - 1].focus();
+            }
+        });
+    });
+    // OTP END
+    
     </script>
 
     
